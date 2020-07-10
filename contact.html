@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">home</a> </li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#blog">blog</a> </li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="wrapper send-message">
+            <h2>get in touch</h2>
+            <form action="submit" class="contact-form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" required>
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="comment-button"><span>submit</span></button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <div class="social">
+                <ul>
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-facebook-f "></i></a></li>
+                    <li><a class="ins-ic mr-3 " role="button "><i class="fab fa-lg fa-instagram "></i></a></li>
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-twitter "></i></a></li>
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-viber"></i></a></li>
+                </ul>
+            </div>
+            <p><a href="info@email.com">info@email.com</a></p>
+            <p><a href="callto:123456789">123-456-7890</a></p>
+            <p><address>
+                123 Queen Street West, Unit 10<br>
+                Toronto, Ontario<br>
+                M5V2D5
+            </address></p>
+        </section>
+
+    </main>
+
+    <footer>Copyright &copy; 2018 HackerYou</footer>
+</body>
+
+</html>
