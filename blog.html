@@ -5,7 +5,7 @@
     <title>Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </head>
@@ -27,9 +27,10 @@
 
 
         <seciton class="wrapper blog" id="blog">
-            <h2>blog</h2>
+
 
             <div class="wrapper blog-text-wrapepr">
+                <h2>blog</h2>
                 <img src="assets/blog-post-image.jpg" alt="tropical fish floating amids colourful riffs">
                 <h3>discovering new species</h3>
                 <div class="blog-data">
@@ -77,15 +78,17 @@
             </section>
             <!-- end of comments section -->
 
-            <form action="submit" class="comment-form">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" required>
+            <div class="wrapper form-wrapper">
+                <form action="submit" class="comment-form">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" required>
 
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                <button class="comment-button"><span>post comment</span></button>
-            </form>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button class="comment-button"><span>post comment</span></button>
+                </form>
+            </div>
         </seciton>
         <!-- end of blog section-->
 

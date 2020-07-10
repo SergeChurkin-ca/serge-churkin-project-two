@@ -1,2 +1,66 @@
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Lato', sans-serif;
+body,
+nav a {
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav li,
+button span {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+nav li,
+button span {
+    letter-spacing: 1px;
+}
+
+h3,
+nav li,
+button span {
+    text-align: center;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: regular;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+h1 {
+    font-size: 138px;
+    line-height: 126px;
+}
+
+h2 {
+    font-size: 80px;
+    line-height: 92px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+nav a {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+button span {
+    line-height: 32px;
+    font-size: 20px;
+}

@@ -5,7 +5,7 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
@@ -14,16 +14,18 @@
 <body>
 
     <header>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#blog">blog</a> </li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-        <h1>under the sea</h1>
-        <img src="assets/home-box-header.png" alt="three golden fishes">
+        <div class="wrapper">
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#blog">blog</a> </li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <h1>under the sea</h1>
+            <img src="assets/home-box-header.png" alt="three golden fishes">
+        </div>
     </header>
 
     <main>
@@ -95,13 +97,13 @@
             </div>
         </section>
 
-        <section class="wrapper gallery"></section>
-        <ul class="gallery-list">
-            <li><img src="assets/gallery-image-1.jpg" alt="girl standing infront of blue lit aquarium and touchinf the glass"></li>
-            <li><img src="assets/gallery-image-2.jpg" alt="group of people observing the tank with huge whale shark"></li>
-            <li><img src="assets/gallery-image-3.jpg" alt="riff fish floating"></li>
-        </ul>
-
+        <section class="wrapper gallery">
+            <ul class="gallery-list">
+                <li><img src="assets/gallery-image-1.jpg" alt="girl standing infront of blue lit aquarium and touchinf the glass"></li>
+                <li><img src="assets/gallery-image-2.jpg" alt="group of people observing the tank with huge whale shark"></li>
+                <li><img src="assets/gallery-image-3.jpg" alt="riff fish floating"></li>
+            </ul>
+        </section>
 
     </main>
 

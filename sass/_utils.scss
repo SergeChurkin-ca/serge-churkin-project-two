@@ -1,0 +1,19 @@
+// $darkbluegrey: #0c1423;
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.nav-list,
+.social-list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $darkbluegrey;
+}
