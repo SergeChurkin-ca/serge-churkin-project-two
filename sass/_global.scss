@@ -1,4 +1,8 @@
 // $darkbluegrey: #0c1423;
+body {
+    background-color: $darkbluegrey;
+}
+
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
@@ -10,10 +14,11 @@
     list-style: none;
 }
 
-a {
-    text-decoration: none;
+nav li,
+.gallery-list li {
+    display: inline;
 }
 
-body {
-    background-color: $darkbluegrey;
+a {
+    text-decoration: none;
 }
