@@ -25,10 +25,11 @@ i.fa {
     color: $darkbluegrey;
 }
 
-.attractions .img-wrapper-1 img {
-    box-shadow: 2em 2em $robineggblue;
+.attractions .img-wrapper-1 img,
+.news-box img {
+    box-shadow: 3em 3em $robineggblue;
 }
 
 .attractions .img-wrapper-2 img {
-    box-shadow: -2em 2em $robineggblue;
+    box-shadow: -3em 3em $robineggblue;
 }
