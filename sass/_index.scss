@@ -1,0 +1,107 @@
+.gallery,
+.attractions,
+.flexcontainer,
+.about,
+.banner,
+.news-box {
+    display: flex;
+}
+
+h1 {
+    width: 20%;
+    margin-left: 0.4em;
+}
+
+.index-header {
+    display: flex;
+}
+
+header img {
+    position: absolute;
+    top: 10em;
+    right: 0;
+    height: auto; // 
+    // height: 45em;
+    width: 60%;
+}
+
+.intro {
+    padding: 10em;
+}
+
+// ATTRACTIONS
+.attractions,
+.gallery {
+    background-color: $spruce;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.attractions img {
+    width: 80%;
+    height: auto;
+}
+
+.attractions .flexcontainer {
+    flex-direction: row;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.flexcontainer .wrapper {
+    flex: 1 1 500px;
+}
+
+.attractions .flexcontainer:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+// ABOUT
+.about {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about .wrapper {
+    width: calc((100% / 2) - 10em);
+    flex: 1 1 600px;
+}
+
+// BANNER
+.banner {}
+
+// NEWS BOX
+.news-box {
+    padding: 5em;
+    justify-content: space-between;
+}
+
+.news-box .img-wrapper {
+    width: 30%;
+    // padding-right: 8em;
+}
+
+.news-box .text-wrapper {
+    margin: 0 5em 0 5em;
+}
+
+// GALLERY
+.gallery {
+    width: 100%;
+}
+
+.gallery ul,
+.gallery li {
+    display: flex;
+}
+
+.gallery ul {
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery li {
+    width: calc((100% / 3) - 2em);
+}

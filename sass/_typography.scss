@@ -1,7 +1,8 @@
 // font-family: 'Barlow', sans-serif;
 // font-family: 'Lato', sans-serif;
 body,
-nav a {
+nav a,
+.contact-info a {
     color: #ffffff;
 }
 
@@ -20,13 +21,13 @@ button span {
 h3,
 h4,
 nav li,
-button span {
+button {
     letter-spacing: 1px;
 }
 
 h3,
 nav li,
-button span {
+button {
     text-align: center;
 }
 
@@ -38,12 +39,14 @@ p {
 }
 
 h1 {
-    font-size: 138px;
+    // font-size: 138px;
+    font-size: calc(10px + (138 - 10) * ((100vw - 300px) / (1600 - 300)));
     line-height: 126px;
 }
 
 h2 {
-    font-size: 80px;
+    // font-size: 80px;
+    font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
     line-height: 92px;
 }
 
@@ -64,4 +67,5 @@ button,
 .submit-button {
     line-height: 32px;
     font-size: 20px;
+    font-weight: bold;
 }

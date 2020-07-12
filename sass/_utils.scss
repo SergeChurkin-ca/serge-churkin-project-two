@@ -1,0 +1,33 @@
+// BUTtONS
+button,
+.submit-button {
+    border: 0;
+    text-transform: uppercase;
+}
+
+.blue-button {
+    background-color: $robineggblue;
+}
+
+.black-button {
+    background-color: $darkbluegrey;
+    color: #ffffff;
+}
+
+// DECORATIONS, BORDERS, SHADOWS, ets.
+span {
+    // background-color: $robineggblue;
+    color: $robineggblue;
+    // border: solid 1px $robineggblue;
+    // border-radius: 50%;
+    font-size: 2em;
+    vertical-align: top;
+}
+
+i.fa {
+    color: $darkbluegrey;
+}
+
+// span i {
+//     width: auto;
+// }

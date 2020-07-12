@@ -1,0 +1,23 @@
+header {
+    height: 75vh;
+    min-height: 620px;
+    max-height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.index-header {
+    background-image: url('../assets/header-image.jpg');
+    background-color: #465774;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.blog-header {
+    background-image: url('../assets/blog-header.jpg');
+}
+
+.contact-header {
+    background-image: url('../assets/contact-header.jpg');
+}
