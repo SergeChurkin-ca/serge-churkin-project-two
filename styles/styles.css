@@ -612,12 +612,11 @@ footer {
 .blog-content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   height: 100%;
-  margin: 0 auto;
 }
 
 .blog-wrapper {
@@ -626,9 +625,15 @@ footer {
   -ms-grid-row: 1;
   grid-row: 1;
   height: auto;
-  margin-right: -1em;
+  margin-right: 0;
   z-index: 1;
   margin-top: -35em;
+  border: solid 2px red;
+}
+
+.blog-text-wrapper {
+  border: solid 2px green;
+  width: auto;
 }
 
 .aside {
@@ -636,7 +641,8 @@ footer {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  margin-left: 0.1em;
+  margin-left: 0;
   margin-top: 3em;
   z-index: 1;
+  border: solid 2px red;
 }
