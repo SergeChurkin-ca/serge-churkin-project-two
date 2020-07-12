@@ -362,6 +362,12 @@ a {
   text-decoration: none;
 }
 
+.attractions,
+.gallery,
+.aside-text-container {
+  background-color: #0f614e;
+}
+
 header {
   height: 75vh;
   min-height: 620px;
@@ -442,11 +448,6 @@ i.fa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.attractions,
-.gallery {
-  background-color: #0f614e;
 }
 
 h1 {
@@ -632,7 +633,6 @@ footer {
 }
 
 .blog-text-wrapper {
-  border: solid 2px green;
   width: auto;
 }
 
@@ -644,5 +644,41 @@ footer {
   margin-left: 0;
   margin-top: 3em;
   z-index: 1;
-  border: solid 2px red;
+  position: relative;
+}
+
+.aside-img-container {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.aside-text-container {
+  position: absolute;
+  top: 1em;
+  right: -0.5em;
+  width: 78%;
+  padding: 77% 1em 1em;
+}
+
+.blog-img-wrapper {
+  min-height: 00px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 3px red;
+}
+
+.blog-img-wrapper img {
+  height: 30em;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.blog-text-wrapper h3 {
+  padding-top: 2em;
 }
