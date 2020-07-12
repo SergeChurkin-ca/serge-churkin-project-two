@@ -33,3 +33,31 @@ i.fa {
 .attractions .img-wrapper-2 img {
     box-shadow: -3em 3em $robineggblue;
 }
+
+.blog-img-wrapper {
+    box-shadow: -25px 25px $robineggblue;
+}
+
+.blog-text-wrapper {
+    position: relative;
+}
+
+.blog-top-container::after {
+    content: '';
+    border-left: solid 5px $robineggblue;
+    position: absolute;
+    top: 15em;
+    left: -25px;
+    bottom: -10px;
+    // right: -33px;
+}
+
+.blog-top-container::before {
+    content: '';
+    border-bottom: solid 5px $robineggblue;
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    bottom: -15px;
+    right: 3px;
+}

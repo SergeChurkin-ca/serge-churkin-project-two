@@ -1,6 +1,6 @@
 .blog-content {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
     height: 100%;
 }
@@ -13,7 +13,7 @@
     margin-right: 0;
     z-index: 1;
     margin-top: -35em;
-    border: solid 2px red;
+    // border: solid 2px red;
 }
 
 .blog-text-wrapper {
@@ -25,6 +25,7 @@
 //     background-color: $darkbluegrey;
 //     border: solid 3px yellow;
 // }
+// ASIDE
 .aside {
     grid-column: 1;
     grid-row: 1;
@@ -45,7 +46,7 @@
 .aside-text-container {
     position: absolute;
     top: 1em;
-    right: -0.5em;
+    right: -1em;
     width: 78%;
     padding: 77% 1em 1em;
 }
@@ -66,10 +67,33 @@
 
 .blog-text-wrapper h3 {
     // background-color: $darkbluegrey;
-    padding-top: 2em;
+    // padding-top: 2em;
+    text-align: left;
+    margin-bottom: 0;
+    ;
 }
 
 // .blog-text-wrapper {
 //     display: flex;
 //     flex-direction: column;
 // }
+// COMMENTS SECTION 
+.comments .content {
+    display: flex;
+    // flex-direction: row;
+    border: solid 2px goldenrod;
+    width: 100%;
+}
+
+.wrapper .comments {
+    width: 100%;
+}
+
+.comments .text-wrapper {
+    display: inline-block;
+}
+
+.comments .img-wrapper {
+    width: 30%;
+    padding-right: 3em;
+}
