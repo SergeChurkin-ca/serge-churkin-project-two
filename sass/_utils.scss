@@ -16,10 +16,7 @@ button,
 
 // DECORATIONS, BORDERS, SHADOWS, ets.
 span {
-    // background-color: $robineggblue;
     color: $robineggblue;
-    // border: solid 1px $robineggblue;
-    // border-radius: 50%;
     font-size: 2em;
     vertical-align: top;
 }
@@ -28,6 +25,10 @@ i.fa {
     color: $darkbluegrey;
 }
 
-// span i {
-//     width: auto;
-// }
+.attractions .img-wrapper-1 img {
+    box-shadow: 2em 2em $robineggblue;
+}
+
+.attractions .img-wrapper-2 img {
+    box-shadow: -2em 2em $robineggblue;
+}

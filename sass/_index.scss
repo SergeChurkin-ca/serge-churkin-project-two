@@ -1,10 +1,13 @@
 .gallery,
-.attractions,
-.flexcontainer,
 .about,
 .banner,
 .news-box {
     display: flex;
+}
+
+.attractions,
+.gallery {
+    background-color: $spruce;
 }
 
 h1 {
@@ -30,41 +33,46 @@ header img {
 }
 
 // ATTRACTIONS
-.attractions,
-.gallery {
-    background-color: $spruce;
-    flex-direction: row;
-    flex-wrap: wrap;
+.attractions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    // grid-gap: calc(8em + 1%
+    grid-gap: calc(40px + 10%);
 }
 
-.attractions img {
-    width: 80%;
-    height: auto;
+.attractions .wrapper {
+    width: 100%;
 }
 
-.attractions .flexcontainer {
-    flex-direction: row;
-    height: auto;
-    flex-wrap: wrap;
+.attractions .img-wrapper-1 img {
+    margin-top: -2em;
 }
 
-.flexcontainer .wrapper {
-    flex: 1 1 500px;
+.attractions .img-wrapper-2 img {
+    // margin-top: -2em;
 }
 
-.attractions .flexcontainer:nth-child(2) {
-    flex-direction: row-reverse;
+.img-wrapper-2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.text-wrapper-2 {
+    text-align: right;
 }
 
 // ABOUT
 .about {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 10em;
 }
 
 .about .wrapper {
-    width: calc((100% / 2) - 10em);
-    flex: 1 1 600px;
+    width: calc((100% / 2) - 1em);
+    flex: 1 1 400px;
+    padding: 1em;
 }
 
 // BANNER
@@ -73,16 +81,21 @@ header img {
 // NEWS BOX
 .news-box {
     padding: 5em;
+    // flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .news-box .img-wrapper {
-    width: 30%;
+    width: calc(45em - 30%);
     // padding-right: 8em;
+    // flex: 1 1 200px;
+    float: left;
 }
 
 .news-box .text-wrapper {
     margin: 0 5em 0 5em;
+    flex: 1 1 250px;
 }
 
 // GALLERY
@@ -104,4 +117,8 @@ header img {
 
 .gallery li {
     width: calc((100% / 3) - 2em);
+}
+
+img {
+    width: 100%;
 }
