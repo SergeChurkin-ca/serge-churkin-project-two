@@ -300,7 +300,10 @@ button {
   text-align: center;
 }
 
-p {
+p,
+.aside .posts-list,
+adress,
+author {
   font-family: 'Lato', sans-serif;
   font-weight: regular;
   font-size: 20px;
@@ -391,6 +394,7 @@ header {
 
 .contact-header {
   background-image: url("../assets/contact-header.jpg");
+  height: 40vh;
 }
 
 .nav-list {
@@ -411,10 +415,13 @@ button,
   border: 0;
   text-transform: uppercase;
   line-height: 0.6em;
+  margin-top: 0.5em;
 }
 
 .blue-button {
   background-color: #86e0f9;
+  padding: 0.8em 1em;
+  border-radius: 0.1em;
 }
 
 .black-button {
@@ -506,7 +513,7 @@ header img {
 
 .intro {
   text-align: center;
-  padding: 10em;
+  padding: 12em;
 }
 
 .intro p {
@@ -704,6 +711,10 @@ footer {
   padding: 77% 1em 1em;
 }
 
+.aside h4 {
+  margin: 2em 0 0em;
+}
+
 .blog-img-wrapper {
   min-height: 00px;
   width: 100%;
@@ -758,8 +769,8 @@ footer {
   display: grid;
   -ms-grid-columns: 20% 50%;
       grid-template-columns: 20% 50%;
-  -ms-grid-rows: 100% 100%;
-      grid-template-rows: 100% 100%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
   grid-column-gap: 2em;
   height: 100%;
   margin: 5em auto;
@@ -773,7 +784,7 @@ footer {
 .contact-container {
   position: absolute;
   top: 10em;
-  left: 40%;
+  left: 42%;
   width: 50%;
   margin: 0;
   max-width: 800px;
@@ -782,12 +793,20 @@ footer {
 .contact-info {
   -ms-grid-column: 1;
   grid-column: 1;
-  margin: 1% 1% 0 80%;
+  margin: -1em 1% 0 80%;
 }
 
 .social-list {
   text-align: left;
   padding: 0;
+}
+
+.social-list li {
+  padding-right: 1em;
+}
+
+address {
+  font-style: normal;
 }
 
 .blog-form-wrapper {
@@ -799,7 +818,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 2em 0;
+  margin: 2em 0 5em;
 }
 
 form {

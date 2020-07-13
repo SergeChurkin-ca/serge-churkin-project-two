@@ -31,7 +31,10 @@ button {
     text-align: center;
 }
 
-p {
+p,
+.aside .posts-list,
+adress,
+author {
     font-family: 'Lato', sans-serif;
     font-weight: regular;
     font-size: 20px;
