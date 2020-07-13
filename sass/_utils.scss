@@ -26,17 +26,19 @@ button,
     background-color: $darkbluegrey;
 }
 
-// DECORATIONS, BORDERS, SHADOWS, ets.
+// DECORATIONS, SHADOWS, ets.
 span {
     color: $robineggblue;
     font-size: 2em;
     vertical-align: top;
 }
 
+// CIRCLED FAVICONS
 i.fa {
     color: $darkbluegrey;
 }
 
+// BLUE SQUARE SHOADOWS ON PICTURES
 .attractions .img-wrapper-1 img,
 .news-box img {
     box-shadow: 3em 3em $robineggblue;
@@ -56,6 +58,7 @@ i.fa {
     position: relative;
 }
 
+// LEFT AND BOTTOM BLUE BORDER
 .blog-top-container::after {
     content: '';
     border-left: solid 5px $robineggblue;
@@ -74,4 +77,42 @@ i.fa {
     left: -30px;
     bottom: -15px;
     right: 100px;
+}
+
+// HOVER AND ACTIVE EFFECTS
+a:hover,
+a:focus {
+    color: $robineggblue;
+}
+
+button:hover,
+button:focus {
+    box-shadow: 0.2em 0.2em 0.2em grey;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+    background-color: coral;
+}
+
+.submit-button:active {
+    background-color: coral;
+    transform: scale(0.95);
+    transition: all 0.3s;
+    color: $darkbluegrey;
+}
+
+button:active {
+    box-shadow: 0.2em 0.2em 0.2em grey;
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+a:active {
+    display: inline-block;
+    transform: scale(0.9);
+    font-weight: bold;
+    transition: all 0.5s;
 }

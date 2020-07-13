@@ -488,6 +488,53 @@ i.fa {
   right: 100px;
 }
 
+a:hover,
+a:focus {
+  color: #86e0f9;
+}
+
+button:hover,
+button:focus {
+  -webkit-box-shadow: 0.2em 0.2em 0.2em grey;
+          box-shadow: 0.2em 0.2em 0.2em grey;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: coral;
+}
+
+.submit-button:active {
+  background-color: coral;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #0c1423;
+}
+
+button:active {
+  -webkit-box-shadow: 0.2em 0.2em 0.2em grey;
+          box-shadow: 0.2em 0.2em 0.2em grey;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a:active {
+  display: inline-block;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  font-weight: bold;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .gallery,
 .about,
 .banner,
