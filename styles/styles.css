@@ -695,13 +695,14 @@ footer {
   margin: 5em 7em 0 1em;
 }
 
+.blog-top-container p {
+  margin-top: 3em;
+}
+
 .blog-data,
 .author {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline;
   font-style: normal;
-  margin-bottom: 1.5em;
 }
 
 .aside {
