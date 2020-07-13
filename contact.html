@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="contact-header">
+    <header class="wrapper contact-header">
         <div class="wrapper">
             <nav>
                 <ul class="nav-list">
@@ -27,36 +27,46 @@
 
 
     <main>
+        <div class="wrapper contact-content">
 
-        <section class="wrapper send-message">
-            <h2>get in touch</h2>
-            <form action="submit" class="contact-form">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" required>
+            <!-- CONTACT FORM SECTION -->
+            <section class="wrapper contact-section">
+                <div class="wrapper contact-container">
+                    <h2>get in touch</h2>
+                    <div class="wrapper contact-form-wrapper">
 
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                <input type="submit" class="submit-button" value="submit">
-            </form>
-        </section>
+                        <form action="submit" class="contact-form">
+                            <!-- <label for="name">Name</label> -->
+                            <input type="text" name="name" id="name" required placeholder="Name">
+                            <!-- <label for="email">Email address</label> -->
+                            <input type="email" name="email" id="email" required placeholder="Email address">
 
-        <section class="wrapper contact-info">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            <input type="submit" class="submit-button" value="submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
 
-            <ul class="social-list">
-                <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-facebook-f "></i></a></li>
-                <li><a class="ins-ic mr-3 " role="button "><i class="fab fa-lg fa-instagram "></i></a></li>
-                <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-twitter "></i></a></li>
-                <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-viber"></i></a></li>
-            </ul>
-            <p><a href="info@email.com">info@email.com</a></p>
-            <p><a href="callto:123456789">123-456-7890</a></p>
-            <p><address>
-                123 Queen Street West, Unit 10<br>
-                Toronto, Ontario<br>
-                M5V2D5
-            </address></p>
-        </section>
+
+            <!-- CONTACT INFO AND SOCIAL BUTTONS -->
+            <section class="wrapper contact-info">
+
+                <ul class="social-list">
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-facebook-f "></i></a></li>
+                    <li><a class="ins-ic mr-3 " role="button "><i class="fab fa-lg fa-instagram "></i></a></li>
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-twitter "></i></a></li>
+                    <li><a class="fb-ic mr-3 " role="button "><i class="fab fa-lg fa-viber"></i></a></li>
+                </ul>
+                <p><a href="info@email.com">info@email.com</a></p>
+                <p><a href="callto:123456789">123-456-7890</a></p>
+                <p><address>
+                    123 Queen Street West, Unit 10<br>
+                    Toronto, Ontario<br>
+                    M5V2D5
+                </address></p>
+            </section>
+        </div>
 
     </main>
 
