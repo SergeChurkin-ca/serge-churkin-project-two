@@ -59,7 +59,8 @@
     .attractions .img-wrapper-2 img {
         position: absolute;
         // width: auto;
-        bottom: -3em;
+        // bottom: -3em;
+        top: 2em;
         right: 0;
     }
     
@@ -70,7 +71,7 @@
     
     .text-wrapper-1 {
         margin: 0 auto;
-        padding-right: 10em;
+        padding-right: 5em;
     }
     
     .text-wrapper-2 {
@@ -82,17 +83,28 @@
     .about {
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 8em 8em 3em;
+        padding: 8em 8em 0em;
     }
     
     .about .wrapper {
         width: calc((100% / 2) - 1em);
         flex: 1 1 400px;
-        padding: 1em;
+        padding: 0em;
     }
     
-    // BANNER
-    .banner {}
+    .about .wrapper span {
+        float: left;
+        height: 10em;
+        margin-right: 1em;
+    }
+    
+    .about h4 {
+        // float: right;
+        width: 8em;
+        margin-top: 0em;
+        margin-left: 20%;
+        margin-bottom: 0;
+    }
     
     // NEWS BOX
     .news-box {

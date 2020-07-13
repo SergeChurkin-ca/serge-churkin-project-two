@@ -404,10 +404,11 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 4em;
 }
 
 .nav-list li {
-  padding: 1em;
+  padding: 1.5em;
 }
 
 button,
@@ -420,13 +421,17 @@ button,
 
 .blue-button {
   background-color: #86e0f9;
-  padding: 0.8em 1em;
-  border-radius: 0.1em;
 }
 
 .black-button {
   background-color: #0c1423;
   color: #ffffff;
+}
+
+.blue-button,
+.black-button {
+  padding: 0.8em 1em;
+  border-radius: 0.1em;
 }
 
 .contact-form-wrapper .submit-button {
@@ -545,7 +550,7 @@ header img {
 
 .attractions .img-wrapper-2 img {
   position: absolute;
-  bottom: -3em;
+  top: 2em;
   right: 0;
 }
 
@@ -558,7 +563,7 @@ header img {
 
 .text-wrapper-1 {
   margin: 0 auto;
-  padding-right: 10em;
+  padding-right: 5em;
 }
 
 .text-wrapper-2 {
@@ -573,7 +578,7 @@ header img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 8em 8em 3em;
+  padding: 8em 8em 0em;
 }
 
 .about .wrapper {
@@ -581,7 +586,20 @@ header img {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
-  padding: 1em;
+  padding: 0em;
+}
+
+.about .wrapper span {
+  float: left;
+  height: 10em;
+  margin-right: 1em;
+}
+
+.about h4 {
+  width: 8em;
+  margin-top: 0em;
+  margin-left: 20%;
+  margin-bottom: 0;
 }
 
 .news-box {
@@ -670,7 +688,7 @@ footer {
   height: auto;
   margin-right: 1%;
   z-index: 1;
-  margin-top: -35em;
+  margin-top: -30em;
 }
 
 .blog-top-container {
@@ -750,7 +768,7 @@ footer {
 }
 
 .wrapper .comments {
-  width: 100%;
+  width: 90%;
   margin: 1em;
 }
 
@@ -803,6 +821,10 @@ footer {
 
 .social-list li {
   padding-right: 1em;
+}
+
+address {
+  margin: -1em 0;
 }
 
 address {
