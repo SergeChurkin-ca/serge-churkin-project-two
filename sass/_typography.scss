@@ -55,7 +55,8 @@ h3 {
 }
 
 h4 {
-    font-size: 32px;
+    // font-size: 32px;
+    font-size: calc(10px + (32 - 10) * ((100vw - 300px) / (1600 - 300)));
 }
 
 nav a {
