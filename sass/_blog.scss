@@ -21,10 +21,6 @@
     width: auto;
 }
 
-// .blog-text-wrapper {
-//     background-color: $darkbluegrey;
-//     border: solid 3px yellow;
-// }
 // ASIDE
 .aside {
     grid-column: 1;
@@ -56,7 +52,7 @@
     width: 100%;
     object-fit: cover;
     justify-content: center;
-    border: solid 3px red;
+    // border: solid 3px red;
 }
 
 .blog-img-wrapper img {
@@ -81,12 +77,13 @@
 .comments .content {
     display: flex;
     // flex-direction: row;
-    border: solid 2px goldenrod;
+    // border: solid 2px goldenrod;
     width: 100%;
 }
 
 .wrapper .comments {
     width: 100%;
+    margin: 1em;
 }
 
 .comments .text-wrapper {
@@ -96,4 +93,10 @@
 .comments .img-wrapper {
     width: 30%;
     padding-right: 3em;
+}
+
+// FORM SECTION
+.form-wrapper {
+    // margin: 5em auto;
+    // display: flex;
 }

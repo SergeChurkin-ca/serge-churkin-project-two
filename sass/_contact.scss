@@ -1,0 +1,35 @@
+.contact-content {
+    display: grid;
+    grid-template-columns: 20% 50%;
+    grid-template-rows: 100% 100%;
+    grid-column-gap: 2em;
+    height: 100%;
+    margin: 5em auto;
+}
+
+.contact-section {
+    grid-column: 2;
+    // grid-row: 1;
+    // position: relative;
+}
+
+.contact-container {
+    position: absolute;
+    top: 10em;
+    left: 40%;
+    width: 50%;
+    // margin: 0 5em 5em 7em;
+    margin: 0;
+    max-width: 800px;
+}
+
+.contact-info {
+    grid-column: 1;
+    // grid-row: 2;
+    margin: 1% 1% 0 80%;
+}
+
+.social-list {
+    text-align: left;
+    padding: 0;
+}

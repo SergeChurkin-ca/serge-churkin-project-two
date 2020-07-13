@@ -1,8 +1,9 @@
-// BUTtONS
+// BUTTONS
 button,
 .submit-button {
     border: 0;
     text-transform: uppercase;
+    line-height: 0.6em;
 }
 
 .blue-button {
@@ -12,6 +13,10 @@ button,
 .black-button {
     background-color: $darkbluegrey;
     color: #ffffff;
+}
+
+.contact-form-wrapper .submit-button {
+    background-color: $darkbluegrey;
 }
 
 // DECORATIONS, BORDERS, SHADOWS, ets.
@@ -34,8 +39,10 @@ i.fa {
     box-shadow: -3em 3em $robineggblue;
 }
 
-.blog-img-wrapper {
-    box-shadow: -25px 25px $robineggblue;
+// In blog
+.blog-img-wrapper,
+.contact-form-wrapper {
+    box-shadow: -30px 40px $robineggblue;
 }
 
 .blog-text-wrapper {
@@ -47,7 +54,7 @@ i.fa {
     border-left: solid 5px $robineggblue;
     position: absolute;
     top: 15em;
-    left: -25px;
+    left: -30px;
     bottom: -10px;
     // right: -33px;
 }
@@ -57,7 +64,7 @@ i.fa {
     border-bottom: solid 5px $robineggblue;
     position: absolute;
     top: 25px;
-    left: -25px;
+    left: -30px;
     bottom: -15px;
     right: 3px;
 }
