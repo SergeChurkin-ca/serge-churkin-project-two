@@ -11,9 +11,10 @@ form {
     justify-content: space-between;
 }
 
-// label {
-//     visibility: hidden;
-// }
+label {
+    display: none;
+}
+
 form textarea,
 input {
     width: 100%;

@@ -3,7 +3,7 @@
     width: 100%;
     grid-template-columns: 1fr 2fr;
     grid-row: 100% 100%;
-    grid-column-gap: 5em;
+    grid-column-gap: 1em;
     grid-row-gap: 5em;
 }
 
@@ -58,6 +58,18 @@
 
 .aside h4 {
     margin: 2em 0 0em;
+}
+
+.aside ul {
+    width: 100%;
+    margin-left: -1em
+}
+
+@media (max-width: 915px) {
+    .aside-text-container {
+        position: relative;
+        width: 100%;
+    }
 }
 
 .blog-img-wrapper img {

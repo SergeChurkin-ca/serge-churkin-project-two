@@ -45,7 +45,6 @@ author {
 h1 {
     // font-size: 138px;
     font-size: calc(30px + (138 - 30) * ((100vw - 300px) / (1600 - 300)));
-    // line-height: calc( 126px + 25%);
     line-height: 126px;
 }
 
@@ -56,7 +55,6 @@ h1 {
 }
 
 h2 {
-    // font-size: 80px;
     font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
     line-height: 92px;
 }

@@ -1,15 +1,11 @@
 .nav-list {
     display: flex;
     justify-content: flex-end;
-    // margin-left: 4em;
     margin-right: 10%;
-    // flex-wrap: wrap;
 }
 
 .nav-list li {
     padding: 1.5em;
-    // flex: 1 1 200px;
-    // justify-content: center;
 }
 
 @media (max-width: 592px) {
