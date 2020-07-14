@@ -11,3 +11,14 @@
     // flex: 1 1 200px;
     // justify-content: center;
 }
+
+@media (max-width: 592px) {
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-list li {
+        text-align: left;
+        margin: 0.4em;
+        padding: 0;
+    }
+}

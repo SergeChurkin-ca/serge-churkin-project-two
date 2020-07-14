@@ -49,6 +49,12 @@ h1 {
     line-height: 126px;
 }
 
+@media (min-width: 1900px) {
+    h1 {
+        font-size: 138px;
+    }
+}
+
 h2 {
     // font-size: 80px;
     font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
