@@ -1,156 +1,219 @@
-    .gallery,
-    .about,
-    .banner,
-    .news-box {
-        display: flex;
+.gallery,
+.about,
+.banner,
+.news-box {
+    display: flex;
+}
+
+h1 {
+    width: 20%;
+    margin-left: 0.4em;
+}
+
+// .index-header {
+//     display: flex;
+// }
+header img {
+    position: absolute;
+    top: 10em;
+    right: 0;
+    height: auto;
+    width: 60%;
+    // bottom: -10em;
+    // bottom: -25%;
+}
+
+// INTRO 
+.intro {
+    text-align: center;
+    // padding: 12em;
+    padding: 15% 5em;
+}
+
+.intro p {
+    text-align: left;
+}
+
+// ATTRACTIONS ------------------------------------//
+// .attractions {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 1fr;
+//     grid-column-gap: 13em;
+//     grid-row-gap: 2em;
+//     padding: 1em 0 2em;
+// }
+// .attractions .wrapper {
+// width: 100%;
+//     position: relative;
+// .attractions .img-wrapper-1 img {
+// top: -4em;
+//     left: 0;
+//     position: absolute;
+// width: auto;
+// object-fit: contain;
+// min-width: 50px;
+// }
+// .attractions .img-wrapper-2 img {
+//     position: absolute;
+//     // width: auto;
+//     // bottom: -3em;
+//     top: 2em;
+//     right: 0;
+// }
+// .img-wrapper-2 {
+//     grid-row: 2;
+//     grid-column: 2;
+// }
+// .text-wrapper-1 {
+//     margin: 0 auto;
+//     padding-right: 5em;
+// }
+// .text-wrapper-2 {
+//     text-align: right;
+//     padding-left: 10em;
+// grid-column: 1;
+// }
+.attractions {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    // align-content: stretch;
+    grid-column-gap: 10em;
+    grid-row-gap: 5em;
+}
+
+.attractions div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.attractions h4 {
+    margin-bottom: 0;
+}
+
+// .attractions {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     // flex: 1 1 400px;
+//     width: auto;
+// }
+// .attractions .wrapper {
+//     flex: 1 1 500px;
+// }
+.text-wrapper-2 {
+    text-align: right;
+    padding-left: 10em;
+}
+
+.img-wrapper-1,
+.img-wrapper-2 {
+    position: relative;
+}
+
+.img-wrapper-2 {
+    order: 2;
+}
+
+.img-wrapper-1 img,
+.img-wrapper-2 img {
+    position: absolute;
+}
+
+.img-wrapper-1 img {
+    top: -2em;
+}
+
+.img-wrapper-2 img {
+    bottom: -4em;
+}
+
+@media (max-width: 1111px) {
+    .img-wrapper-2 {
+        order: 0;
     }
-    
-    h1 {
-        width: 20%;
-        margin-left: 0.4em;
-    }
-    
-    .index-header {
-        display: flex;
-    }
-    
-    header img {
-        position: absolute;
-        top: 10em;
-        right: 0;
-        height: auto; // 
-        // height: 45em;
-        width: 60%;
-    }
-    
-    // INTRO 
-    .intro {
-        text-align: center;
-        padding: 12em;
-    }
-    
-    .intro p {
-        text-align: left;
-    }
-    
-    // ATTRACTIONS
-    .attractions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 13em;
-        grid-row-gap: 2em;
-        // position: relative;
-        padding: 1em 0 2em;
-    }
-    
-    .attractions .wrapper {
-        width: 100%;
+    .img-wrapper-2 img {
         position: relative;
     }
-    
-    .attractions .img-wrapper-1 img {
-        top: -4em;
-        left: 0;
-        position: absolute;
-        // width: auto;
-    }
-    
-    .attractions .img-wrapper-2 img {
-        position: absolute;
-        // width: auto;
-        // bottom: -3em;
-        top: 2em;
-        right: 0;
-    }
-    
-    .img-wrapper-2 {
-        grid-row: 2;
-        grid-column: 2;
-    }
-    
-    .text-wrapper-1 {
-        margin: 0 auto;
-        padding-right: 5em;
-    }
-    
-    .text-wrapper-2 {
-        text-align: right;
-        padding-left: 10em;
-    }
-    
-    // ABOUT
-    .about {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 8em 8em 0em;
-    }
-    
-    .about .wrapper {
-        width: calc((100% / 2) - 1em);
-        flex: 1 1 400px;
-        padding: 0em;
-    }
-    
-    .about .wrapper span {
-        float: left;
-        height: 10em;
-        margin-right: 1em;
-    }
-    
-    .about h4 {
-        // float: right;
-        width: 8em;
-        margin-top: 0em;
-        margin-left: 20%;
-        margin-bottom: 0;
-    }
-    
-    // NEWS BOX
-    .news-box {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 8em 8em 5em;
-    }
-    
-    .news-box .wrapper {
-        // width: calc((100% / 3) - 20%);
-        flex: 1 1 300px;
-        padding: 1em;
-    }
-    
-    .news-box .img-wrapper {
-        margin-right: 3em;
-        flex: 1 0 200px;
-    }
-    
-    .news-box img {
-        width: 20em;
-        max-width: 500px;
-    }
-    
-    // GALLERY
-    .gallery {
-        width: 100%;
-        padding: 4em;
-    }
-    
-    .gallery ul,
-    .gallery li {
-        display: flex;
-    }
-    
-    .gallery ul {
-        justify-content: space-around;
-        padding: 1rem;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
-    .gallery li {
-        width: calc((100% / 3) - 2em);
-    }
-    
-    img {
-        width: 100%;
-    }
+}
+
+// ABOUT
+.about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8em 8em 0em;
+}
+
+.about .wrapper {
+    width: calc((100% / 2) - 1em);
+    flex: 1 1 400px;
+    padding: 0em;
+}
+
+.about .wrapper span {
+    float: left;
+    height: 10em;
+    margin-right: 1em;
+}
+
+.about h4 {
+    // float: right;
+    width: 8em;
+    margin-top: 0em;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+// NEWS BOX
+.news-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8em 8em 5em;
+}
+
+.news-box .wrapper {
+    // width: calc((100% / 3) - 20%);
+    flex: 1 1 300px;
+    padding: 1em;
+}
+
+.news-box .img-wrapper {
+    margin-right: 3em;
+    flex: 1 0 200px;
+}
+
+.news-box img {
+    width: 20em;
+    max-width: 500px;
+}
+
+// GALLERY
+.gallery {
+    width: 100%;
+    padding: 4em;
+}
+
+.gallery ul,
+.gallery li {
+    display: flex;
+}
+
+.gallery ul {
+    justify-content: space-around;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery li {
+    width: calc((100% / 3) - 2em);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

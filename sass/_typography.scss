@@ -43,8 +43,15 @@ author {
 
 h1 {
     // font-size: 138px;
-    font-size: calc(10px + (138 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(30px + (138 - 30) * ((100vw - 300px) / (1600 - 300)));
+    // line-height: calc( 126px + 25%);
     line-height: 126px;
+}
+
+@media (min-width: 1900px) {
+    h1 {
+        font-size: 138px;
+    }
 }
 
 h2 {

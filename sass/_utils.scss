@@ -3,8 +3,8 @@ button,
 .submit-button {
     border: 0;
     text-transform: uppercase;
-    line-height: 0.6em;
-    margin-top: 0.5em;
+    // line-height: 0.6em;
+    // margin-top: 0.5em;
 }
 
 .blue-button {
@@ -14,11 +14,12 @@ button,
 .black-button {
     background-color: $darkbluegrey;
     color: #ffffff;
+    width: 9em;
 }
 
 .blue-button,
 .black-button {
-    padding: 0.8em 1em;
+    padding: 0.4em 0.1em 0.1em;
     border-radius: 0.1em;
 }
 
@@ -41,11 +42,11 @@ i.fa {
 // BLUE SQUARE SHOADOWS ON PICTURES
 .attractions .img-wrapper-1 img,
 .news-box img {
-    box-shadow: 3em 3em $robineggblue;
+    box-shadow: 2em 2em $robineggblue;
 }
 
 .attractions .img-wrapper-2 img {
-    box-shadow: -3em 3em $robineggblue;
+    box-shadow: -2em 2em $robineggblue;
 }
 
 // In blog
