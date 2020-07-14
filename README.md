@@ -1,6 +1,6 @@
 # Project 2 (multi-page PSD conversion)
 
-## Due date
+https://sergechurkin-ca.github.io/serge-churkin-project-two/
 
 Project due dates can be found [here](https://github.com/HackerYou/bootcamp-notes/blob/master/stuff-you-need-to-know/important-dates.md).
 
