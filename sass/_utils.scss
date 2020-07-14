@@ -3,23 +3,24 @@ button,
 .submit-button {
     border: 0;
     text-transform: uppercase;
-    // line-height: 0.6em;
-    // margin-top: 0.5em;
+    // line-height: 0.2em;
+    margin-top: 0.5em;
 }
 
 .blue-button {
     background-color: $robineggblue;
+    padding: 0.5em 1.5em;
 }
 
 .black-button {
     background-color: $darkbluegrey;
     color: #ffffff;
-    width: 9em;
+    width: 10em;
+    padding: 0.5em;
 }
 
 .blue-button,
 .black-button {
-    padding: 0.4em 0.1em 0.1em;
     border-radius: 0.1em;
 }
 

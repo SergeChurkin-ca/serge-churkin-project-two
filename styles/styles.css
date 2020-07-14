@@ -315,12 +315,6 @@ h1 {
   line-height: 126px;
 }
 
-@media (min-width: 1900px) {
-  h1 {
-    font-size: 138px;
-  }
-}
-
 h2 {
   font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
   line-height: 92px;
@@ -331,7 +325,7 @@ h3 {
 }
 
 h4 {
-  font-size: calc(10px + (32 - 10) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(17px + (32 - 17) * ((100vw - 300px) / (1600 - 300)));
 }
 
 nav a {
@@ -383,6 +377,25 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  h1 {
+    line-height: 1em;
+  }
+  .wrapper {
+    width: 100%;
+    padding-top: 0.5em;
+    margin: 0;
+  }
+  p,
+  button {
+    padding: 1em;
+  }
+  .text-wrapper,
+  .news-box h3 {
+    text-align: center;
+  }
+}
+
 header {
   height: 75vh;
   min-height: 620px;
@@ -427,21 +440,23 @@ button,
 .submit-button {
   border: 0;
   text-transform: uppercase;
+  margin-top: 0.5em;
 }
 
 .blue-button {
   background-color: #86e0f9;
+  padding: 0.5em 1.5em;
 }
 
 .black-button {
   background-color: #0c1423;
   color: #ffffff;
-  width: 9em;
+  width: 10em;
+  padding: 0.5em;
 }
 
 .blue-button,
 .black-button {
-  padding: 0.4em 0.1em 0.1em;
   border-radius: 0.1em;
 }
 
@@ -581,9 +596,9 @@ header img {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-column-gap: 10em;
+  -ms-grid-columns: (minmax(360px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-column-gap: calc(2em + 10%);
   grid-row-gap: 5em;
 }
 
@@ -596,24 +611,21 @@ header img {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
 }
 
 .attractions h4 {
   margin-bottom: 0;
 }
 
+.text-wrapper-1 {
+  padding-right: calc(5em + 5%);
+}
+
 .text-wrapper-2 {
   text-align: right;
   padding-left: 10em;
-}
-
-.img-wrapper-1,
-.img-wrapper-2 {
-  position: relative;
+  padding-bottom: 2em;
+  margin: 0;
 }
 
 .img-wrapper-2 {
@@ -622,27 +634,31 @@ header img {
           order: 2;
 }
 
-.img-wrapper-1 img,
-.img-wrapper-2 img {
-  position: absolute;
-}
-
 .img-wrapper-1 img {
-  top: -2em;
+  margin-top: -2em;
 }
 
 .img-wrapper-2 img {
-  bottom: -4em;
+  margin-top: 1em;
 }
 
-@media (max-width: 1111px) {
+@media (max-width: 900px) {
+  section {
+    padding: 2em;
+  }
   .img-wrapper-2 {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
-  .img-wrapper-2 img {
-    position: relative;
+  .attractions div,
+  img {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  button {
+    margin: 0 auto;
   }
 }
 
@@ -653,28 +669,45 @@ header img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 8em 8em 0em;
+  padding: 8em 8em 3em;
 }
 
 .about .wrapper {
   width: calc((100% / 2) - 1em);
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 400px;
-          flex: 1 1 400px;
+      -ms-flex: 1 1 340px;
+          flex: 1 1 340px;
   padding: 0em;
 }
 
 .about .wrapper span {
   float: left;
-  height: 10em;
   margin-right: 1em;
 }
 
 .about h4 {
-  width: 8em;
+  width: 10em;
   margin-top: 0em;
   margin-left: 20%;
   margin-bottom: 0;
+}
+
+.about p {
+  margin-left: 5.5em;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 780px) {
+  .about {
+    width: 100%;
+    padding: 0;
+    margin: 3em 0;
+  }
+}
+
+.banner {
+  width: 100%;
+  padding: 0;
 }
 
 .news-box {
@@ -684,26 +717,27 @@ header img {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 8em 8em 5em;
+  padding: 4em 2em 4em;
+  margin: 0 auto;
 }
 
 .news-box .wrapper {
+  width: calc((100% / 3) - 20%);
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 300px;
-          flex: 1 1 300px;
-  padding: 1em;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
 }
 
 .news-box .img-wrapper {
-  margin-right: 3em;
+  margin: 3em 1em;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 200px;
           flex: 1 0 200px;
+  padding-right: 8%;
 }
 
-.news-box img {
-  width: 20em;
-  max-width: 500px;
+.news-box h3 {
+  text-align: left;
 }
 
 .gallery {
@@ -734,6 +768,12 @@ header img {
 img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    display: none;
+  }
 }
 
 footer {

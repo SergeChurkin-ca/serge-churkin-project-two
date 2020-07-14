@@ -3,3 +3,22 @@
         font-size: 138px;
     }
 }
+
+@media (max-width: 768px) {
+    h1 {
+        line-height: 1em;
+    }
+    .wrapper {
+        width: 100%;
+        padding-top: 0.5em;
+        margin: 0;
+    }
+    p,
+    button {
+        padding: 1em;
+    }
+    .text-wrapper,
+    .news-box h3 {
+        text-align: center;
+    }
+}

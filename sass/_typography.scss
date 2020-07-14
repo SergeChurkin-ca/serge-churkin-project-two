@@ -48,12 +48,6 @@ h1 {
     line-height: 126px;
 }
 
-@media (min-width: 1900px) {
-    h1 {
-        font-size: 138px;
-    }
-}
-
 h2 {
     // font-size: 80px;
     font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
@@ -66,7 +60,7 @@ h3 {
 
 h4 {
     // font-size: 32px;
-    font-size: calc(10px + (32 - 10) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(17px + (32 - 17) * ((100vw - 300px) / (1600 - 300)));
 }
 
 nav a {
